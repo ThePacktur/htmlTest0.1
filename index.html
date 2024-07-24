@@ -3,34 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Red Social</title>
-    <link rel="stylesheet" href="asses/css/style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="asses/css/estilos.css">
 </head>
 <body>
-    <div class="custom-shape-divider-top-1717788429">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
-        </svg>
-    </div>
-
     <header>
-        <img img src="asses/img/pattern.png" alt="mosaiko" width="100" height="100">
-        <h1>Bacchos</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#menu">Menú</a></li>
+                <li><a href="#reservas">Reservas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
-  
-
-    <section class="Neon-text" id="post-form">
-        <h2>Crear una Publicación</h2>
-        
-        
-        <textarea id="post-content" placeholder="Escribe tu publicación"></textarea>
-        <button id="post-button">Publicar</button>
-    </section>
-    
-    <section id="posts">
-        <!-- Aquí se mostrarán las publicaciones -->
-    </section>
-
-    <script src="asses/js/clock.js"></script>
+    <main>
+        <section id="inicio">
+            <h1>Restaurante</h1>
+            <p>Bienvenido a nuestro restaurante</p>
+            <img src="asses/img/street-6099209_1920.jpg" alt="Imagen del restaurante">
+        </section>
+        <section id="menu">
+            <h2>Menú</h2>
+            <img src="asses/img/pancakes-5989136_1280.jpg" alt="Imagen Desayuno">
+            <ul>
+                <li><h3>Entrantes</h3>
+                    <ul>
+                        <li>Ensalada de frutas</li>
+                        <li>Ensalada de verduras</li>
+                    </ul>
+                </li>
+                <li><h3>Platos fuertes</h3>
+                    <ul>
+                        <li>Pollo al curry</li>
+                        <li>Carne asada</li>
+                    </ul>
+                </li>
+                <li><h3>Postres</h3>
+                    <ul>
+                        <li>Tarta de chocolate</li>
+                        <li>Helado de vainilla</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <section id="reservas">
+            <h2>Reservas</h2>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre">
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fecha" name="fecha">
+                <label for="hora">Hora:</label>
+                <input type="time" id="hora" name="hora">
+                <button>Reservar</button>
+            </form>
+        </section>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Si tienes alguna pregunta o comentario, no dudes en contactarnos</p>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje"></textarea>
+                <button>Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Restaurante</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
